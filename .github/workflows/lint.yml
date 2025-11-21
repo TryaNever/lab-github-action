@@ -1,0 +1,20 @@
+name: Lint project file in Ci
+
+on:
+    push:
+        branches: ["**"]
+jobs:
+    build-and-lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Recuperation du code
+            uses: actions/checkout@v4
+
+            - name: Set up nodeJs
+            uses: actions/setup-node@v4
+            with:
+                node-version: 22
+            - name: Instalation des dependances
+            run: npm i
+
+            - name:
