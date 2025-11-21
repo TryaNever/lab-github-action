@@ -37,7 +37,6 @@ export default defineConfig([
       },
     },
     rules: {
-      semi: ["error", "always"],
       "comma-dangle": ["error", "always-multiline"],
       "no-unused-vars": ["warn", { varsIgnorePattern: "^[A-Z_]" }],
       "no-console": ["warn"],
