@@ -1,0 +1,5 @@
+name: Test CI Pipeline
+
+on:
+  push:
+    branches: ["**"]
